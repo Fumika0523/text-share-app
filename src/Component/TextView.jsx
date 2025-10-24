@@ -54,13 +54,12 @@ const TextView = ({ text, createdAt, formatDate }) => {
           <div className="text-start text-base sm:text-lg leading-relaxed">{text}</div>
         </div>
         
- 
-       {!isInvalid && (
-  <div className="flex justify-end flex-row w-full bg-amber-700 gap-3 mt-6">
+        {!isInvalid && (
+  <div className="flex justify-end flex-row w-full gap-3 mt-6">
     {/* Copy Text Button */}
     <button
       onClick={handleCopyText}
-      className="flex items-center gap-2 bg-green-700 text-white py-3 px-6 rounded-2xl font-medium shadow-md hover:bg-green-800 hover:scale-105 transition-all duration-200 "
+      className="flex items-center gap-2 border-2 border-indigo-300 text-black bg-gray-100 py-3 px-6 rounded-2xl font-medium shadow-md hover:bg-gray-50 hover:order-indigo-200  hover:scale-105 transition-all duration-200 "
     >
       <IoCopy className="text-lg" />
       <span>Copy Text</span>
